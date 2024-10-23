@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    padding: 16px 0;
+    background-color: rgb(31, 19, 57);
+}
+
+header nav li {
+    display: inline;
+    margin-left: 32px;
+}
+
+.container,
+#nossos-cursos,
+#contato {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header img{
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section .container img{
+    height: 380px;
+    margin-right: 32px;
+}
+
+section {
+    padding: 32px 0;
+}
+
+section h2{
+    margin-bottom: 40px;
+    border-bottom: 2px solid;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.lista-cursos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.2%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+.lista-cursos img{
+    height: 220px;
+}
+
+.lista-cursos h3{
+    margin: 12px 0;
+}
+
+.lista-cursos li{
+    list-style: none;
+}
+
+.lista-cursos p{
+    max-width: 220px;
+}
+
+.lista-cursos li button{
+    display: block;
+    width: 90%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(31, 19, 57);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.lista-cursos li strong{
+    margin: 16px 0;
+    display: block;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form{
+    max-width: 360px;
+}
+
+form button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(31, 19, 57);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer{
+    background-color: rgb(31, 19, 57);
+    color: #fff;
+    padding: 12px;
+}
+
+footer p{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header{
+        margin: 0  auto;
+    }
+
+    header .container {
+        text-align: end;
+    }
+
+    header .container nav li a{
+        display: block;
+        margin-right: 14px;
+        text-transform: uppercase;
+    }
+
+    header .container nav ul{
+        margin: 0 auto;
+    }
+
+    #sobre .container img{
+        height: 380px;
+        margin-bottom: 32px;
+        margin-left: 30px;
+    }
+
+
+    .container{
+        display: block;
+        max-width: 90%;
+    }
+
+    
+    #contato{
+        max-width: 90%;
+    }
+
+    #nossos-cursos{
+        max-width: 95%;
+    }
+
+    #sobre .container{
+        display: block;
+    }
+
+    #nossos-cursos .lista-cursos{
+        display: block;
+    }
+
+    .lista-cursos img{
+        height: 400px;
+        margin-left: 20px;
+    }
+
+
+    section .lista-cursos button{
+        margin-left: 20px;
+        margin-bottom: 60px;
+        width: 400px;
+
+    }
+
+    section .lista-cursos h3{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    section .lista-cursos p,
+    section .lista-cursos  strong{
+        margin-left: 30px;
+    }
+
+    #contato form{
+        margin-left: 30px;
+    }
+
+    footer{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and  (min-width: 641px) and (max-width: 1023px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+
+    header img{
+        height: 32px;
+        margin-left: 40px;
+    }
+
+    header .container nav li a{
+        display: inline;
+        margin-right: 30px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    #sobre .container{
+        display: block;
+        max-width: 90%;
+    }
+
+    #sobre .container img{
+        height: 710px;
+        margin-left: 6px;
+        margin-bottom: 30px;
+    }
+
+    #sobre h2{
+        font-size: 30px;
+    }
+
+
+    #nossos-cursos{
+        max-width: 95%;
+    }
+
+    #nossos-cursos h2{
+        font-size: 30px;
+    }
+
+    #nossos-cursos h3{
+        font-size: 24px;
+    }
+
+    #nossos-cursos p,
+    #nossos-cursos strong{
+        font-size: 18px;
+    }
+
+    #nossos-cursos .lista-cursos{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    
+    .lista-cursos img{
+        height: 350px;
+    }
+
+    section .lista-cursos button{
+        width: 360px;
+        font-size: 20px;
+        
+    }
+
+    #contato{
+        max-width: 90%;
+    }
+
+    #contato h2{
+        margin-top: 60px;
+        font-size: 30px;
+    }
+
+
+    #contato form label{
+        font-size: 18px;
+    }
+
+    #contato form button{
+        width: 360px;
+        font-size: 20px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
+
